@@ -1,0 +1,75 @@
+{
+  "hardware": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.7",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "cpu_count": 20,
+    "memory_gb": null,
+    "ortools_available": true
+  },
+  "methodology": {
+    "runs_per_api_size": 7,
+    "sensitivity_samples": 20,
+    "seed": 42,
+    "note": "Measured in the execution sandbox. The solver_used field states the actual optimizer path; no Docker daemon or OR-Tools package was available during this run, so fallback timings are not CP-SAT timings."
+  },
+  "results": [
+    {
+      "apps": 100,
+      "edges": 118,
+      "scc_groups": 2,
+      "import_ms": 1.954,
+      "graph_construction_ms": 0.587,
+      "scc_graph_analysis_ms": 8.97,
+      "scoring_ms": 10.144,
+      "sensitivity_20_samples_ms": 94.44,
+      "wave_optimization_ms": 14.414,
+      "wave_status": "FEASIBLE",
+      "solver": "deterministic_fallback",
+      "pareto_generation_ms": 652.627,
+      "pareto_plans_attempted": 36,
+      "pareto_unique_candidates": 32,
+      "pareto_frontier_count": 29,
+      "api_graph_p50_ms": 24.41,
+      "api_graph_p95_ms": 34.683
+    },
+    {
+      "apps": 500,
+      "edges": 630,
+      "scc_groups": 3,
+      "import_ms": 10.734,
+      "graph_construction_ms": 1.414,
+      "scc_graph_analysis_ms": 43.225,
+      "scoring_ms": 68.642,
+      "sensitivity_20_samples_ms": 761.027,
+      "wave_optimization_ms": 86.577,
+      "wave_status": "FEASIBLE",
+      "solver": "deterministic_fallback",
+      "pareto_generation_ms": 3011.241,
+      "pareto_plans_attempted": 36,
+      "pareto_unique_candidates": 33,
+      "pareto_frontier_count": 32,
+      "api_graph_p50_ms": 100.034,
+      "api_graph_p95_ms": 145.958
+    },
+    {
+      "apps": 1000,
+      "edges": 1190,
+      "scc_groups": 1,
+      "import_ms": 58.376,
+      "graph_construction_ms": 5.735,
+      "scc_graph_analysis_ms": 71.006,
+      "scoring_ms": 167.059,
+      "sensitivity_20_samples_ms": 1407.219,
+      "wave_optimization_ms": 244.252,
+      "wave_status": "FEASIBLE",
+      "solver": "deterministic_fallback",
+      "pareto_generation_ms": 6015.108,
+      "pareto_plans_attempted": 36,
+      "pareto_unique_candidates": 33,
+      "pareto_frontier_count": 33,
+      "api_graph_p50_ms": 283.236,
+      "api_graph_p95_ms": 345.467
+    }
+  ]
+}
