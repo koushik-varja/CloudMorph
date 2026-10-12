@@ -21,3 +21,5 @@ frontend/dist/
 Thumbs.db
 .idea/
 .vscode/
+
+*.tsbuildinfo
